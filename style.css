@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: 'Kumbh Sans', sans-serif;
+  background: hsl(185, 75%, 39%);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: -70% 180%, 170% -100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.205);
+  border-radius: 10px;
+}
+
+.card__upperpart {
+  width: 100%;
+  height: 120px;
+  background: url(images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card__upperpart img {
+  width: 100px;
+  height: 100px;
+
+  display: block;
+  border-radius: 50%;
+  border: 5px solid whitesmoke;
+  position: absolute;
+  left: 31%;
+  bottom: -40%;
+}
+
+.card__lowerpart {
+  width: 100%;
+  height: 228px;
+  text-align: center;
+  background: whitesmoke;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card__username {
+  font-size: 18px;
+  padding-top: 60px;
+  margin-bottom: 10px;
+  color: hsl(229, 23%, 23%);
+}
+
+.card__userage {
+  display: inline-block;
+  margin-left: 6px;
+  font-weight: lighter;
+}
+
+.card__stat {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card__stat h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: hsl(229, 23%, 23%);
+}
+
+.card__stat p {
+  font-size: 16px;
+}
+
+.card__userage,
+.card__lowerpart>p,
+.card__stat p {
+  color: hsl(0, 0%, 59%);
+}
