@@ -17,7 +17,7 @@ body {
   height: 100vh;
   background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
   background-repeat: no-repeat;
-  background-position: -70% 180%, 170% -100%;
+  background-position: -350px -480px,650px 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,4 +96,10 @@ body {
 .card__lowerpart>p,
 .card__stat p {
   color: hsl(0, 0%, 59%);
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    background-position: -650px -600px, 200px 300px;
+  }
 }
